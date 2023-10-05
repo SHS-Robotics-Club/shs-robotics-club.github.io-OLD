@@ -3,4 +3,5 @@ main:
   - title: "Home"
     url: /
   - title: "Seasons"
-    url: /seasons/
+    description: Archive of past seasons
+    url: /season_archive/

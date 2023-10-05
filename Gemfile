@@ -10,6 +10,7 @@ source "https://rubygems.org"
 
 gem "github-pages", "~> 228", group: :jekyll_plugins
 gem "jekyll-include-cache", group: :jekyll_plugins
+gem "jekyll-sitemap", group: :jekyll_plugins
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.

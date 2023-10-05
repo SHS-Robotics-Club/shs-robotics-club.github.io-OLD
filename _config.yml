@@ -25,9 +25,9 @@ url                      : "https://shsrobotics.club/" # the base hostname & pro
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "shs-robotics-club/shs-robotics-club.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/sc_logo/favicon-32x32.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/sc_logo/sc_logo.svg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : "Spontaneous Combustion" # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -123,6 +123,11 @@ footer:
       icon: "fab fa-fw fa-instagram"
       # url:
 
+collections:
+  seasons:
+    output: false
+
+
 
 # Reading Files
 include:
@@ -197,10 +202,7 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins (previously gems:)
 plugins:
-#  - jekyll-paginate
-#  - jekyll-sitemap
-#  - jekyll-gist
-#  - jekyll-feed
+  - jekyll-sitemap
   - jekyll-include-cache
 
 # mimic GitHub Pages with --safe
@@ -257,8 +259,14 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: # true
       share: true
       related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
