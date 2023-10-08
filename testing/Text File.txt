@@ -1,0 +1,4 @@
+ center footer
+ left header links pc/ rightward samwich mobiel
+ dark/light mode
+ masterhead shorten and recolor

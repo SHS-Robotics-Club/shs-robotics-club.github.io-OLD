@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "combustion" # "air", "aqua", "contrast", "dark", "di
 locale                   : "en-US"
 title                    : "SHS Robotics Club"
 title_separator          : "-"
-subtitle                 : "Team 3123" # site tagline that appears below site title in masthead
+subtitle                 : "FTC Team 3123" # site tagline that appears below site title in masthead
 name                     : "Seminole High School Robotics"
 description              : "Explore innovation at SHS Robotics Club: where students collaborate, compete, and solve real-world challenges. Join us in shaping the future of technology and fostering STEM passion."
 url                      : "https://shsrobotics.club/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -104,24 +104,13 @@ analytics:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/SHS-Robotics-Club"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+    - label: "FTC Event Web"
+      url: https://ftc-events.firstinspires.org/team/3123
+    - label: "The Orange Alliance"
+      url: https://theorangealliance.org/teams/3123
 
 collections:
   seasons:

@@ -4,18 +4,19 @@
 
 .masthead {
   position: relative;
-  border-bottom: 1px solid $border-color;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
-  z-index: 20;
+  z-index: 2;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  background-color: #1F1F1F; //rgba(255,255,255,0.05)
 
   &__inner-wrap {
     @include clearfix;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 15px;
     max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -39,6 +40,7 @@
   }
 }
 
+
 .site-logo img {
   max-height: 2rem;
 }
@@ -50,11 +52,13 @@
   -ms-flex-item-align: center;
   align-self: center;
   font-weight: bold;
+  font-size: $type-size-5;
   // z-index: 20;
 }
 
 .site-subtitle {
   display: block;
+  text-transform: uppercase;
   font-size: $type-size-8;
 }
 
@@ -87,7 +91,7 @@
   white-space: nowrap;
 
   &--lg {
-    padding-right: 2em;
+    padding-right: 0;
     font-weight: 700;
   }
 }
