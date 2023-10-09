@@ -13,7 +13,6 @@ body {
   padding: 0;
   color: $text-color;
   font-family: $global-font-family;
-  line-height: 1.5;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -61,10 +60,6 @@ h6 {
 small,
 .small {
   font-size: $type-size-6;
-}
-
-p {
-  margin-bottom: 1.3em;
 }
 
 u,
