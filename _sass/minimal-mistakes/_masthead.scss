@@ -39,12 +39,25 @@
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  --switch-height: 20px;
+  --sun-color: #FFD734;
+  --day-color: #7BC3D9;
+  --moon-color: #FFF8DE;
+  --night-color: #041A40;
 
   .theme-switch {
-    display: inline-block;
     position: relative;
-    width: 30px;
-    height: 15px;
+    width: calc(var(--switch-height) * (175 / 100));
+    height: var(--switch-height);
+    cursor: pointer;
   }
   
   .theme-switch input {
@@ -52,33 +65,37 @@
   }
   
   .slider {
-    background-color: $layer-4;
-    bottom: 0;
-    cursor: pointer;
-    left: 0;
     position: absolute;
+    background-color: var(--night-color);
+    bottom: 0;
+    left: 0;
     right: 0;
     top: 0;
     transition: .4s;
   }
   
   .slider:before {
-    background-color: #fff;
-    bottom: 2px;
     content: "";
-    height: 75%;
-    left: 2px;
     position: absolute;
-    transition: .4s;
-    width: 10px;
+    top: calc(var(--switch-height) * (10 / 100));
+    left: calc(var(--switch-height) * (10 / 100));
+    width: calc(var(--switch-height) * (80 / 100));
+    height: calc(var(--switch-height) * (80 / 100));
+    border-radius: 50%;
+    box-shadow: inset calc(var(--switch-height) * (30 / 100)) calc(var(--switch-height) * (-10 / 100)) 0px 0px var(--moon-color);
+    background-color: var(--night-color);
+    transition: 0.8s;
   }
   
   input:checked + .slider {
-    background-color: #66bb6a;
+    background-color: var(--day-color);
   }
   
   input:checked + .slider:before {
-    transform: translateX(26px);
+    left: calc(100% - (var(--switch-height) * (10 / 100)));
+    transform: translateX(-100%);
+    background-color: var(--sun-color);
+    box-shadow: none;
   }
   
   .slider.round {
