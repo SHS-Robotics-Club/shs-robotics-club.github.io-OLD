@@ -148,7 +148,7 @@ input[type="file"] {
 
 select {
   width: auto;
-  background-color: $form-background-color;
+  background-color: $layer-1;
   display: inline-block;
 
   padding: 0.25em;
@@ -156,7 +156,7 @@ select {
   color: $text-color;
   border: $border-color;
   border-radius: $border-radius;
-  box-shadow: $box-shadow;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
 
 select[multiple],

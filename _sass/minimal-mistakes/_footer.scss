@@ -14,8 +14,8 @@
   animation: $intro-transition;
   -webkit-animation-delay: 0.45s;
   animation-delay: 0.45s;
-  box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
-  background-color: #BE3723;
+  box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.16), 0 0 0 2px rgba(0, 0, 0, 0.08);
+  background-color: $layer-2;
   text-align: center;
 
   footer {
@@ -56,7 +56,8 @@
   li {
     display: inline-block;
     padding: 0;
-    margin: 0;
+    margin: 5px;
+    margin-top: 0;
     font-family: $sans-serif-narrow;
     font-size: $type-size-8;
     text-transform: uppercase;
