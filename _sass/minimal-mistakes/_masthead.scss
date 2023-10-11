@@ -10,7 +10,7 @@
   animation-delay: 0.15s;
   z-index: 2;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.16), 0 0 0 2px rgba(0, 0, 0, 0.08);
-  background-color: #fff;
+  background-color: var(--layer-2);
 
   &__inner-wrap {
     @include clearfix;
