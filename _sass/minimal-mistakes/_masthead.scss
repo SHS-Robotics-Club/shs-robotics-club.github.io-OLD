@@ -1,4 +1,4 @@
-/* ==========================================================================
+/* ===================================================layer=======================
    MASTHEAD
    ========================================================================== */
 
@@ -10,7 +10,7 @@
   animation-delay: 0.15s;
   z-index: 2;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.16), 0 0 0 2px rgba(0, 0, 0, 0.08);
-  background-color: $layer-2;
+  background-color: var(--layer-2);
 
   &__inner-wrap {
     @include clearfix;
@@ -49,9 +49,9 @@
 
   --switch-height: 20px;
   --sun-color: #FFD734;
-  --day-color: #7BC3D9;
+  --day-color: #FFF; //#7BC3D9;
   --moon-color: #FFF8DE;
-  --night-color: #041A40;
+  --night-color: #121212;//#041A40;
 
   .theme-switch {
     position: relative;
@@ -67,11 +67,11 @@
   .slider {
     position: absolute;
     background-color: var(--night-color);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.16) inset, 0 0 2px 2px rgba(0, 0, 0, 0.08) inset;
     bottom: 0;
     left: 0;
     right: 0;
     top: 0;
-    transition: .4s;
   }
   
   .slider:before {
@@ -81,10 +81,9 @@
     left: calc(var(--switch-height) * (10 / 100));
     width: calc(var(--switch-height) * (80 / 100));
     height: calc(var(--switch-height) * (80 / 100));
-    border-radius: 50%;
     box-shadow: inset calc(var(--switch-height) * (30 / 100)) calc(var(--switch-height) * (-10 / 100)) 0px 0px var(--moon-color);
     background-color: var(--night-color);
-    transition: 0.8s;
+    transition: 0.75s;
   }
   
   input:checked + .slider {
