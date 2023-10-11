@@ -48,10 +48,10 @@
   }
 
   --switch-height: 20px;
-  --sun-color: #FFD734;
-  --day-color: #FFF; //#7BC3D9;
-  --moon-color: #FFF8DE;
-  --night-color: #121212;//#041A40;
+  --sun-color: #ffd734;
+  --day-color: #fff; //#7BC3D9;
+  --moon-color: #fff8de;
+  --night-color: #121212; //#041A40;
 
   .theme-switch {
     position: relative;
@@ -59,21 +59,22 @@
     height: var(--switch-height);
     cursor: pointer;
   }
-  
+
   .theme-switch input {
-    display:none;
+    display: none;
   }
-  
+
   .slider {
     position: absolute;
     background-color: var(--night-color);
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.16) inset, 0 0 2px 2px rgba(0, 0, 0, 0.08) inset;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.16) inset,
+      0 0 2px 2px rgba(0, 0, 0, 0.08) inset;
     bottom: 0;
     left: 0;
     right: 0;
     top: 0;
   }
-  
+
   .slider:before {
     content: "";
     position: absolute;
@@ -81,26 +82,27 @@
     left: calc(var(--switch-height) * (10 / 100));
     width: calc(var(--switch-height) * (80 / 100));
     height: calc(var(--switch-height) * (80 / 100));
-    box-shadow: inset calc(var(--switch-height) * (30 / 100)) calc(var(--switch-height) * (-10 / 100)) 0px 0px var(--moon-color);
+    box-shadow: inset calc(var(--switch-height) * (30 / 100))
+      calc(var(--switch-height) * (-10 / 100)) 0px 0px var(--moon-color);
     background-color: var(--night-color);
     transition: 0.75s;
   }
-  
+
   input:checked + .slider {
     background-color: var(--day-color);
   }
-  
+
   input:checked + .slider:before {
     left: calc(100% - (var(--switch-height) * (10 / 100)));
     transform: translateX(-100%);
     background-color: var(--sun-color);
     box-shadow: none;
   }
-  
+
   .slider.round {
     border-radius: 34px;
   }
-  
+
   .slider.round:before {
     border-radius: 50%;
   }

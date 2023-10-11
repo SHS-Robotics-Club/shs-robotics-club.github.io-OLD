@@ -2,20 +2,19 @@
    Dark skin
    ========================================================================== */
 
-
 /* New Colors */
 * {
   --dark-shade-0: #121212;
-  --dark-shade-1: #1F1F1F;
+  --dark-shade-1: #1f1f1f;
   --dark-shade-2: #292929;
   --dark-shade-3: #333333;
-  --dark-shade-4: #3D3D3D;
-  --light-shade-0: #FFFFFF;
-  --light-shade-1: #F5F5F5;
-  --light-shade-2: #EBEBEB;
-  --light-shade-3: #E0E0E0;
-  --light-shade-4: #D6D6D6;
-  --primary-base: #BE3723;
+  --dark-shade-4: #3d3d3d;
+  --light-shade-0: #ffffff;
+  --light-shade-1: #f5f5f5;
+  --light-shade-2: #ebebeb;
+  --light-shade-3: #e0e0e0;
+  --light-shade-4: #d6d6d6;
+  --primary-base: #be3723;
   --primary-light-1: #dd472f;
   --primary-light-2: #e85c4a;
   --primary-light-3: #e85c4a;
@@ -24,7 +23,7 @@
   //--primary-dark-2:;
   //--primary-dark-3:;
   //--primary-dark-4:;
-  --secondary-base: #FF8F1F;
+  --secondary-base: #ff8f1f;
   //--secondary-light-1:;
   //--secondary-light-2:;
   //--secondary-light-3:;
@@ -33,7 +32,7 @@
   //--secondary-dark-2:;
   //--secondary-dark-3:;
   //--secondary-dark-4:;
-  --tertiary-base: #FFB81F;
+  --tertiary-base: #ffb81f;
   //--tertiary-light-1:;
   //--tertiary-light-2:;
   //--tertiary-light-3:;
@@ -49,10 +48,10 @@ html {
   --layer-1: var(--dark-shade-1);
   --layer-2: var(--dark-shade-2);
   --primary-color: var(--primary-base);
-  --text-color: #FFF;
+  --text-color: #fff;
 }
 
-html[data-theme='light'] {
+html[data-theme="light"] {
   --layer-0: var(--light-shade-0);
   --layer-1: var(--light-shade-1);
   --layer-2: var(--light-shade-2);
@@ -64,19 +63,22 @@ html.transition,
 html.transition *,
 html.transition *:before,
 html.transition *:after {
-    transition: all 650ms !important;
-    transition-delay: 0 !important;
+  transition: all 650ms !important;
+  transition-delay: 0 !important;
 }
 
-
 /* Old Colors */
-$text-color: #FFF;
+$text-color: #fff;
 $background-color: black;
 $primary-color: red;
 $border-color: mix(#fff, $background-color, 20%) !default;
 $code-background-color: mix(#000, $background-color, 15%) !default;
 $code-background-color-dark: mix(#000, $background-color, 20%) !default;
-$form-background-color: color-mix(in srgb, $background-color 85%, white) !default;
+$form-background-color: color-mix(
+  in srgb,
+  $background-color 85%,
+  white
+) !default;
 $footer-background-color: mix(#000, $background-color, 30%) !default;
 $link-color: mix($primary-color, $text-color, 40%) !default;
 $link-color-hover: mix(#fff, $link-color, 25%) !default;
@@ -88,7 +90,7 @@ $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
 .author__urls.social-icons i,
 .author__urls.social-icons .svg-inline--fa,
 .page__footer-follow .social-icons i,
-.page__footer-follow .social-icons .svg-inline--fa  {
+.page__footer-follow .social-icons .svg-inline--fa {
   color: inherit;
 }
 
