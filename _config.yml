@@ -11,8 +11,8 @@ title             : "SHS Robotics Club"
 title_separator   : "-"
 subtitle          : "FTC Team 3123" # site tagline that appears below site title in masthead
 name              : "Seminole High School Robotics"
-description       : "Explore innovation at SHS Robotics Club: where students collaborate, compete, and solve real-world challenges. Join us in shaping the future of technology and fostering STEM passion."
-url               : "https://shsrobotics.club/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description       : "Join SHS Robotics Club in Seminole, FL – Experience the Future of Tech! FTC Team 3123 Spontaneous Combustion Ignites Innovation. Unleash Your Potential! 🔥"
+url               : "https://www.shsrobotics.club/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl           : # the subpath of your site, e.g. "/blog"
 repository        : "shs-robotics-club/shs-robotics-club.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser            : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -20,7 +20,7 @@ logo              : "/assets/images/sc_logo/sc_logo.svg" # path of logo image to
 masthead_title    : "Spontaneous Combustion" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs       : true # true, false (default)
 words_per_minute  : 200
-theme_switch      : true
+theme_switch      : false
 comments:
   provider: # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
