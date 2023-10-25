@@ -7,7 +7,7 @@ permalink: /season_archive/
 Welcome to Team 3123's FTC journey, where we share our robot designs and successes. Dive into our digital archive to explore our story, full of exciting moments and innovations. We invite you to experience our adventures in the world of robotics.
 </p>
 
-<input type="text" id="seasonSearch" onkeyup="myFunction()" placeholder="Search seasons..." />
+<input type="text" class= "seasonSearch" id="seasonSearch" onkeyup="myFunction()" placeholder="Search seasons..." />
 
 <ul id="seasonList">
   {% assign sorted_seasons = site.seasons | sort: 'year' | reverse %}

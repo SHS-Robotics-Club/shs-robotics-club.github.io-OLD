@@ -78,13 +78,13 @@ textarea,
 select {
   display: inline-block;
   width: 100%;
-  padding: 0.25em;
-  margin-bottom: 0.5em;
   color: var(--text-color);
-  background-color: var(--layer-0);
-  border: $border-color;
-  border-radius: $border-radius;
-  box-shadow: $box-shadow;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  background-color: var(--layer-1);
+  border: 1px solid transparent;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 5px;
 }
 
 .input-mini {

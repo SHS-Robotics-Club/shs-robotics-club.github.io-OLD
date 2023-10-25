@@ -22,5 +22,14 @@
   "frontMatter.framework.id": "jekyll",
   "frontMatter.content.publicFolder": "assets",
   "frontMatter.preview.host": "http://localhost:4000",
-  "frontMatter.content.pageFolders": []
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "_pages",
+      "path": "[[workspace]]/_pages"
+    },
+    {
+      "title": "_seasons",
+      "path": "[[workspace]]/_seasons"
+    }
+  ]
 }

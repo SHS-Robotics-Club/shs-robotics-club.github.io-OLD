@@ -2,6 +2,9 @@
 main:
   - title: "Home"
     url: /
-  - title: "Seasons"
+  - title: "Season Archive"
     description: Archive of past seasons
     url: /season_archive/
+  - title: "About"
+    description: About the team
+    url: /about/
